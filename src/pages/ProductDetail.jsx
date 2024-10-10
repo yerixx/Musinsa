@@ -31,7 +31,7 @@ const ProductDetail = () => {
   const { id } = useParams();
 
   const getProductDetail = async () => {
-    const url = `http://localhost:3000/products/${id}`;
+    const url = `https://my-json-server.typicode.com/yerixx/Musinsa/products/${id}`;
     const response = await fetch(url);
     const data = await response.json();
     setProduct(data);
